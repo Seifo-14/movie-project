@@ -1,0 +1,97 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f3f3f3;
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+#egyptian-actors {
+  margin: 20px;
+}
+
+.actor-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.actor-list img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  border: 3px solid transparent;
+}
+
+.actor-list img:hover {
+  transform: scale(1.05);
+  border: 3px solid #007bff;
+}
+
+.actor-list img.selected {
+  border: 3px solid #28a745;
+  transform: scale(1.05);
+}
+
+.movie {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.poster {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.cast {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.cast-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cast-member p {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+#reset-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+#reset-btn:hover {
+  background: #e63939;
+}
