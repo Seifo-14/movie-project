@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Recast – Choose Your Actor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Recast</h1>
+    <p>Choose your favorite Egyptian actors to replace the originals!</p>
+  </header>
+
+  <main>
+    <!-- Inception Movie -->
+    <section class="movie">
+      <img src="images/inception.jpg" alt="Inception poster" class="poster" />
+      <div class="details">
+        <h2>Inception (2010)</h2>
+        <p><strong>Original Cast:</strong> Leonardo DiCaprio, Joseph Gordon-Levitt</p>
+        <p><strong>Egyptian Recast:</strong> <span id="inception-recast">—</span></p>
+
+        <div class="actors">
+          <img src="images/ahmed-helmy.jpg" alt="Ahmed Helmy" title="Ahmed Helmy" />
+          <img src="images/asser-yassin.jpg" alt="Asser Yassin" title="Asser Yassin" />
+        </div>
+
+        <div class="choices">
+          <button onclick="chooseActor('inception', 'Ahmed Helmy as Cobb, Karim Abdel Aziz as Arthur')">Helmy & Karim</button>
+          <button onclick="chooseActor('inception', 'Asser Yassin as Cobb, Maged El Kedwany as Arthur')">Asser & Maged</button>
+          <button onclick="chooseActor('inception', 'Tamer Hosny as Cobb, Ahmed Ezz as Arthur')">Tamer & Ezz</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Batman Movie -->
+    <section class="movie">
+      <img src="images/batman.jpg" alt="The Batman poster" class="poster" />
+      <div class="details">
+        <h2>The Batman (2022)</h2>
+        <p><strong>Original Cast:</strong> Robert Pattinson, Zoë Kravitz</p>
+        <p><strong>Egyptian Recast:</strong> <span id="batman-recast">—</span></p>
+
+        <div class="actors">
+          <img src="images/tara-emad.jpg" alt="Tara Emad" title="Tara Emad" />
+          <img src="images/yasmine-sabri.jpg" alt="Yasmine Sabri" title="Yasmine Sabri" />
+        </div>
+
+        <div class="choices">
+          <button onclick="chooseActor('batman', 'Asser Yassin as Batman, Tara Emad as Catwoman')">Asser & Tara</button>
+          <button onclick="chooseActor('batman', 'Ahmed Ezz as Batman, Yasmine Sabri as Catwoman')">Ezz & Yasmine</button>
+          <button onclick="chooseActor('batman', 'Karim Abdel Aziz as Batman, Hana El Zahed as Catwoman')">Karim & Hana</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Movie Recast by Mahmoud Seif</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
