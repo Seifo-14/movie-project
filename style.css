@@ -1,3 +1,36 @@
+/* 🌐 Navigation Bar */
+nav {
+  background-color: #111;
+  padding: 12px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+nav a.active {
+  background-color: #0077cc;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 119, 204, 0.6);
+}
+
+/* 🌍 General Page Styles */
 body {
   font-family: 'Poppins', sans-serif;
   background: #f3f3f3;
@@ -7,16 +40,20 @@ body {
   padding: 0;
 }
 
+/* 🏷️ Header */
 header {
   background-color: #111;
   color: #fff;
-  padding: 20px;
+  padding: 30px 20px;
+  margin-bottom: 20px;
 }
 
 h1 {
   margin: 0;
+  font-size: 1.8rem;
 }
 
+/* 🎭 Egyptian Actors Section */
 #egyptian-actors {
   margin: 20px;
 }
@@ -25,7 +62,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
 }
 
 .actor-list img {
@@ -34,27 +71,28 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
-  transition: transform 0.2s, border 0.2s;
+  transition: transform 0.25s ease, border 0.25s ease;
   border: 3px solid transparent;
 }
 
 .actor-list img:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   border: 3px solid #007bff;
 }
 
 .actor-list img.selected {
   border: 3px solid #28a745;
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
+/* 🎬 Movie / Series Cards */
 .movie {
   background: #fff;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 30px auto;
+  padding: 25px;
   border-radius: 12px;
-  width: 80%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .poster {
@@ -62,11 +100,13 @@ h1 {
   border-radius: 10px;
 }
 
+/* 👥 Cast Section */
 .cast {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .cast-member img {
@@ -81,15 +121,17 @@ h1 {
   font-weight: 600;
 }
 
+/* 🔁 Reset Button */
 #reset-btn {
   background: #ff4d4d;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  margin-bottom: 40px;
+  margin: 30px 0 50px;
+  transition: background 0.3s ease;
 }
 
 #reset-btn:hover {

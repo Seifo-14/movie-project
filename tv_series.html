@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Series Replacement Project</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+  <header>
+    <h1>📺 Replace TV Series Stars with Egyptian Actors 🇪🇬</h1>
+    <p>Click on an Egyptian actor, then click on a TV series cast member to replace them!</p>
+    <nav>
+      <a href="index.html">🎬 Movies</a> |
+      <a href="tvseries.html" class="active">📺 TV Series</a>
+    </nav>
+  </header>
+
+  <!-- Egyptian Actors -->
+  <section id="egyptian-actors">
+    <h2>Choose an Egyptian Actor</h2>
+    <div class="actor-list">
+      <img src="images/ahmed-helmy.jpg" alt="Ahmed Helmy" class="egyptian" data-name="Ahmed Helmy">
+      <img src="images/asser-yassin.jpg" alt="Asser Yassin" class="egyptian" data-name="Asser Yassin">
+      <img src="images/tara-emad.jpg" alt="Tara Emad" class="egyptian" data-name="Tara Emad">
+      <img src="images/yasmine-sabri.jpg" alt="Yasmine Sabri" class="egyptian" data-name="Yasmine Sabri">
+      <img src="https://www.albawaba.com/sites/default/files/styles/default/public/2020-02/Ouch!%20Mohamed%20Henedy%20Fell%20Down%20While%20Filming%20New%20Uber%20Ad%20(Video).jpg?itok=PmFF69x-" alt="Mohamed Henedy" class="egyptian" data-name="Mohamed Henedy">
+      <img src="https://image.tmdb.org/t/p/original/i4lFkMBLeoxoUBH0iOWL6EIGeWl.jpg" alt="Dina El Sherbiny" class="egyptian" data-name="Dina El Sherbiny">
+      <img src="https://th.bing.com/th/id/OIP.RhYaLxrvN4pRUUDnUxHFawHaFU?w=227&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Eyad Nassar" class="egyptian" data-name="Eyad Nassar">
+    </div>
+  </section>
+
+  <!-- TV Series -->
+  <section id="tv-series">
+    <!-- Breaking Bad -->
+    <div class="series" data-series="Breaking Bad">
+      <h2>Breaking Bad</h2>
+      <img src="https://cdn.britannica.com/49/251849-050-54AE4F9E/bryan-cranston-aaron-paul-breaking-bad.jpg" alt="Breaking Bad Poster" class="poster">
+      <div class="cast">
+        <div class="cast-member" data-name="Bryan Cranston" data-img="images/bryan.jpg">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.DDRWUZFO17AxSZeA2aGb9QHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bryan Cranston"><p>Bryan Cranston</p>
+        </div>
+        <div class="cast-member" data-name="Aaron Paul" data-img="images/aaron.jpg">
+          <img src="https://th.bing.com/th/id/OIP.-kAWCyaGzRojFZkiAZnPOAHaFK?w=257&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Aaron Paul"><p>Aaron Paul</p>
+        </div>
+        <div class="cast-member" data-name="Anna Gunn" data-img="images/anna.jpg">
+          <img src="https://www.looper.com/img/gallery/breaking-bads-anna-gunn-envisions-a-surprisingly-happy-ending-for-skyler/l-intro-1677710430.jpg" alt="Anna Gunn"><p>Anna Gunn</p>
+        </div>
+        <div class="cast-member" data-name="Giancarlo Esposito" data-img="images/giancarlo.jpg">
+          <img src="https://th.bing.com/th/id/OIP.Fxo-dHeOLo5ax9GytlBqwQHaLH?w=122&h=182&c=7&r=0&o=7&pid=1.7&rm=3" alt="Giancarlo Esposito"><p>Giancarlo Esposito</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game of Thrones -->
+    <div class="series" data-series="Game of Thrones">
+      <h2>Game of Thrones</h2>
+      <img src="https://m.media-amazon.com/images/I/91kI5AXwz9L._AC_UF894,1000_QL80_.jpg" alt="Game of Thrones Poster" class="poster">
+      <div class="cast">
+        <div class="cast-member" data-name="Emilia Clarke" data-img="images/emilia.jpg">
+          <img src="https://hips.hearstapps.com/hmg-prod/images/dany2-1558358454.jpg?crop=0.668xw:1.00xh;0.104xw,0&resize=640:*" alt="Emilia Clarke"><p>Emilia Clarke</p>
+        </div>
+        <div class="cast-member" data-name="Kit Harington" data-img="images/kit.jpg">
+          <img src="https://www.hollywoodreporter.com/wp-content/uploads/2015/01/kit_harrington.jpg" alt="Kit Harington"><p>Kit Harington</p>
+        </div>
+        <div class="cast-member" data-name="Peter Dinklage" data-img="images/peter.jpg">
+          <img src="https://cdn.britannica.com/46/188646-050-BC193B7A/Peter-Dinklage-publicity-shot-2012.jpg" alt="Peter Dinklage"><p>Peter Dinklage</p>
+        </div>
+        <div class="cast-member" data-name="Lena Headey" data-img="images/lena.jpg">
+          <img src="https://www.bostonherald.com/wp-content/uploads/2019/02/lheadey1.jpg?w=458" alt="Lena Headey"><p>Lena Headey</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stranger Things -->
+    <div class="series" data-series="Stranger Things">
+      <h2>Stranger Things</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAPZtjzQdverRm37KEEPcMAKpuBMXGU-427A&s" alt="Stranger Things Poster" class="poster">
+      <div class="cast">
+        <div class="cast-member" data-name="Millie Bobby Brown" data-img="images/millie.jpg">
+          <img src="https://variety.com/wp-content/uploads/2023/10/GettyImages-1397284039.jpg" alt="Millie Bobby Brown"><p>Millie Bobby Brown</p>
+        </div>
+        <div class="cast-member" data-name="Finn Wolfhard" data-img="images/finn.jpg">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/5dd859c02c886a0007ecd904/0x0.jpg?format=jpg&crop=2112,2116,x257,y142,safe&height=416&width=416&fit=bounds" alt="Finn Wolfhard"><p>Finn Wolfhard</p>
+        </div>
+        <div class="cast-member" data-name="David Harbour" data-img="images/david.jpg">
+          <img src="https://m.media-amazon.com/images/M/MV5BZjVkZmNiZGYtZTU3Mi00YzhhLWI1NzQtOTIyNWVmN2IwMjg2XkEyXkFqcGc@._V1_.jpg" alt="David Harbour"><p>David Harbour</p>
+        </div>
+        <div class="cast-member" data-name="Winona Ryder" data-img="images/winona.jpg">
+          <img src="https://imagenes.elpais.com/resizer/v2/KTIRX2HFTVA6XB2UTTCQQU4SWM.jpg?auth=55c5fb1bb37cdca01bc9664c5ffde8ee870556b99a5fc540d9cbe82c611506a2&width=1960&height=1103&smart=true" alt="Winona Ryder"><p>Winona Ryder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button id="reset-btn">Reset All</button>
+  <script src="script.js"></script>
+</body>
+</html>
