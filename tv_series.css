@@ -1,0 +1,70 @@
+/* General Style */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d001a;
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #1a0033;
+  padding: 30px 10px;
+}
+
+header h1 {
+  color: #b366ff;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+nav a.active,
+nav a:hover {
+  color: #b366ff;
+}
+
+/* TV Series Gallery */
+.tv-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.tv-card {
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tv-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #b366ff;
+}
+
+.tv-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #b366ff;
+}
+
+.tv-card h3 {
+  margin-top: 10px;
+  color: #d9b3ff;
+  font-size: 1.1em;
+}

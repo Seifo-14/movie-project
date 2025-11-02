@@ -3,114 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TV Series Replacement Project</title>
-  <link rel="stylesheet" href="style.css">
-  
-
+  <title>📺 TV Series</title>
+  <link rel="stylesheet" href="tv_series.css">
 </head>
 <body>
+
   <header>
     <h1>📺 Replace TV Series Stars with Egyptian Actors 🇪🇬</h1>
-    <p>Click on an Egyptian actor, then click on a TV series cast member to replace them!</p>
+    <p>Select a TV series to explore!</p>
     <nav>
       <a href="index.html">🎬 Movies</a> |
       <a href="tvseries.html" class="active">📺 TV Series</a>
     </nav>
   </header>
 
-  <!-- Egyptian Actors -->
-  <section id="egyptian-actors">
-    <h2>Choose an Egyptian Actor</h2>
-    <div class="actor-list">
-      <img src="images/ahmed-helmy.jpg" alt="Ahmed Helmy" class="egyptian" data-name="Ahmed Helmy">
-      <img src="images/asser-yassin.jpg" alt="Asser Yassin" class="egyptian" data-name="Asser Yassin">
-      <img src="images/tara-emad.jpg" alt="Tara Emad" class="egyptian" data-name="Tara Emad">
-      <img src="images/yasmine-sabri.jpg" alt="Yasmine Sabri" class="egyptian" data-name="Yasmine Sabri">
-      <img src="https://www.albawaba.com/sites/default/files/styles/default/public/2020-02/Ouch!%20Mohamed%20Henedy%20Fell%20Down%20While%20Filming%20New%20Uber%20Ad%20(Video).jpg?itok=PmFF69x-" alt="Mohamed Henedy" class="egyptian" data-name="Mohamed Henedy">
-      <img src="https://image.tmdb.org/t/p/original/i4lFkMBLeoxoUBH0iOWL6EIGeWl.jpg" alt="Dina El Sherbiny" class="egyptian" data-name="Dina El Sherbiny">
-      <img src= https://redseafilmfest.com/files_secured/poster_82.jpg alt="Moana Zaki" class="egyptian" data-name="Mona Zaki">
-      <img src= https://cdn.al-ain.com/images/2019/6/25/78-150118-comedy-nour-lebanese-actress_700x400.jpeg alt="Nour" class="egyptian" data-name="Nour">
-      <img src= https://cairogossip.com/app/uploads/2019/11/54800331_153109329059265_5593442057120807318_n-e1574770593625.jpg alt="Lellah Fadda" class="egyptian" data-name="Lellah Fadda">  
-      <img src= https://m.media-amazon.com/images/M/MV5BMGM5ODZiODMtZTViNC00YjU5LWI3MGUtYzg5NTNlZWIxZTM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg alt="Yasmine El-Abd" class="egyptian" data-name="Yasmine El-Abd">
-      <img src=https://backend.roya-tv.com/imagechanger/Size02Q40R169//images/articles/1748075123.png alt="Ahmed El-sakka" class="egyptian" data-name="Ahmed El-sakka">
-      <img src="https://th.bing.com/th/id/OIP.RhYaLxrvN4pRUUDnUxHFawHaFU?w=227&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="eyad nassar" class="egyptian" data-name="eyad nassar">
-      <img src=https://i2.wp.com/see.news/images/2024/11/mohamed-ramadan-1731581873-0.jpg?resize=750,500&ssl=1 alt="Mohamed Ramadan" class="egyptian" data-name="Mohamed Ramadan">
-      <img src=	https://images.dailynewsegypt.com/2025/05/3466606-42204734.jpg alt="Adel Emam" class="egyptian" data-name="Adel Emam">
-      <img src=	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6cXQOWGwd87Zz8hS3K7BKsEDphFCMfGapmw&s alt="Ahmed Malek" class="egyptian" data-name="Ahmed Malek">
-      <img src=https://images.mubicdn.net/images/cast_member/479102/cache-580898-1598498050/image-w856.jpg alt="Ahmed Dash" class="egyptian" data-name="Ahmed Dash">
-      <img src=	https://www.cosmopolitanme.com/wp-content/uploads/sites/3/cloud/2023/11/16/Hannah-El-Zahed.jpg alt="Hannah-El-Zahed" class="egyptian" data-name="Hannah El-Zahed">
-      <img src=	https://i2.wp.com/see.news/images/2024/09/mohamed-farag-1726229153-0.jpg?resize=920%2C550&ssl=1 alt="Mohamed Farag" class="egyptian" data-name="Mohamed Farag">
-      <img src= https://image.tmdb.org/t/p/w500/dYaBJi6ggVZnBbnycJ1IdDsfgR.jpg alt="Mohamed Emam" class="egyptian" data-name="Mohamed Emam">
-
-      
-    </div>
-  </section>
-
-  <!-- TV Series -->
-  <section id="tv-series">
+  <main class="tv-gallery">
     <!-- Breaking Bad -->
-    <div class="series" data-series="Breaking Bad">
-      <h2>Breaking Bad</h2>
-      <img src="https://cdn.britannica.com/49/251849-050-54AE4F9E/bryan-cranston-aaron-paul-breaking-bad.jpg" alt="Breaking Bad Poster" class="poster">
-      <div class="cast">
-        <div class="cast-member" data-name="Bryan Cranston" data-img="images/bryan.jpg">
-          <img src="https://tse1.mm.bing.net/th/id/OIP.DDRWUZFO17AxSZeA2aGb9QHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bryan Cranston"><p>Bryan Cranston</p>
-        </div>
-        <div class="cast-member" data-name="Aaron Paul" data-img="images/aaron.jpg">
-          <img src="https://th.bing.com/th/id/OIP.-kAWCyaGzRojFZkiAZnPOAHaFK?w=257&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Aaron Paul"><p>Aaron Paul</p>
-        </div>
-        <div class="cast-member" data-name="Anna Gunn" data-img="images/anna.jpg">
-          <img src="https://www.looper.com/img/gallery/breaking-bads-anna-gunn-envisions-a-surprisingly-happy-ending-for-skyler/l-intro-1677710430.jpg" alt="Anna Gunn"><p>Anna Gunn</p>
-        </div>
-        <div class="cast-member" data-name="Giancarlo Esposito" data-img="images/giancarlo.jpg">
-          <img src="https://th.bing.com/th/id/OIP.Fxo-dHeOLo5ax9GytlBqwQHaLH?w=122&h=182&c=7&r=0&o=7&pid=1.7&rm=3" alt="Giancarlo Esposito"><p>Giancarlo Esposito</p>
-        </div>
-      </div>
+    <div class="tv-card">
+      <a href="breakingbad.html">
+        <img src="https://cdn.britannica.com/49/251849-050-54AE4F9E/bryan-cranston-aaron-paul-breaking-bad.jpg" alt="Breaking Bad Poster">
+        <h3>Breaking Bad</h3>
+      </a>
     </div>
 
     <!-- Game of Thrones -->
-    <div class="series" data-series="Game of Thrones">
-      <h2>Game of Thrones</h2>
-      <img src="https://m.media-amazon.com/images/I/91kI5AXwz9L._AC_UF894,1000_QL80_.jpg" alt="Game of Thrones Poster" class="poster">
-      <div class="cast">
-        <div class="cast-member" data-name="Emilia Clarke" data-img="images/emilia.jpg">
-          <img src="https://hips.hearstapps.com/hmg-prod/images/dany2-1558358454.jpg?crop=0.668xw:1.00xh;0.104xw,0&resize=640:*" alt="Emilia Clarke"><p>Emilia Clarke</p>
-        </div>
-        <div class="cast-member" data-name="Kit Harington" data-img="images/kit.jpg">
-          <img src="https://www.hollywoodreporter.com/wp-content/uploads/2015/01/kit_harrington.jpg" alt="Kit Harington"><p>Kit Harington</p>
-        </div>
-        <div class="cast-member" data-name="Peter Dinklage" data-img="images/peter.jpg">
-          <img src="https://cdn.britannica.com/46/188646-050-BC193B7A/Peter-Dinklage-publicity-shot-2012.jpg" alt="Peter Dinklage"><p>Peter Dinklage</p>
-        </div>
-        <div class="cast-member" data-name="Lena Headey" data-img="images/lena.jpg">
-          <img src="https://www.bostonherald.com/wp-content/uploads/2019/02/lheadey1.jpg?w=458" alt="Lena Headey"><p>Lena Headey</p>
-        </div>
-      </div>
+    <div class="tv-card">
+      <a href="gameofthrones.html">
+        <img src="https://m.media-amazon.com/images/I/91kI5AXwz9L._AC_UF894,1000_QL80_.jpg" alt="Game of Thrones Poster">
+        <h3>Game of Thrones</h3>
+      </a>
     </div>
 
     <!-- Stranger Things -->
-    <div class="series" data-series="Stranger Things">
-      <h2>Stranger Things</h2>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAPZtjzQdverRm37KEEPcMAKpuBMXGU-427A&s" alt="Stranger Things Poster" class="poster">
-      <div class="cast">
-        <div class="cast-member" data-name="Millie Bobby Brown" data-img="images/millie.jpg">
-          <img src="https://variety.com/wp-content/uploads/2023/10/GettyImages-1397284039.jpg" alt="Millie Bobby Brown"><p>Millie Bobby Brown</p>
-        </div>
-        <div class="cast-member" data-name="Finn Wolfhard" data-img="images/finn.jpg">
-        <img src="https://imageio.forbes.com/specials-images/imageserve/5dd859c02c886a0007ecd904/0x0.jpg?format=jpg&crop=2112,2116,x257,y142,safe&height=416&width=416&fit=bounds" alt="Finn Wolfhard"><p>Finn Wolfhard</p>
-        </div>
-        <div class="cast-member" data-name="David Harbour" data-img="images/david.jpg">
-          <img src="https://m.media-amazon.com/images/M/MV5BZjVkZmNiZGYtZTU3Mi00YzhhLWI1NzQtOTIyNWVmN2IwMjg2XkEyXkFqcGc@._V1_.jpg" alt="David Harbour"><p>David Harbour</p>
-        </div>
-        <div class="cast-member" data-name="Sadie Sink" data-img="images/max.jpg">
-         <img src=https://static.independent.co.uk/2022/05/30/07/newFile-1.jpg alt="Sadie Sink"><p>Saddie Sink</p>
-
-        </div>
-      </div>
+    <div class="tv-card">
+      <a href="strangerthings.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAPZtjzQdverRm37KEEPcMAKpuBMXGU-427A&s" alt="Stranger Things Poster">
+        <h3>Stranger Things</h3>
+      </a>
     </div>
-  </section>
 
-  <button id="reset-btn">Reset All</button>
-  <script src="script.js"></script>
+    <!-- Money Heist -->
+    <div class="tv-card">
+      <a href="moneyheist.html">
+        <img src="https://m.media-amazon.com/images/I/91b0tZvyNIL._AC_UF894,1000_QL80_.jpg" alt="Money Heist Poster">
+        <h3>Money Heist</h3>
+      </a>
+    </div>
+  </main>
+
 </body>
 </html>

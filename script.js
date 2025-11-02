@@ -1,36 +1,52 @@
-let selectedActor = null;
+let selectedEgyptian = null;
+let historyStack = [];
 
-// Select Egyptian Actor
-document.querySelectorAll('.egyptian').forEach(actor => {
-  actor.addEventListener('click', () => {
-    document.querySelectorAll('.egyptian').forEach(a => a.classList.remove('selected'));
-    actor.classList.add('selected');
-    selectedActor = { name: actor.dataset.name, img: actor.src };
+document.addEventListener("DOMContentLoaded", () => {
+  const egyptianCast = document.querySelectorAll('#egyptian-cast .cast-member');
+  const originalCast = document.querySelectorAll('#original-cast .cast-member');
+  const undoBtn = document.getElementById('undo-btn');
+  const resetBtn = document.getElementById('reset-btn');
+
+  // Select Egyptian actor
+  egyptianCast.forEach(member => {
+    member.addEventListener('click', () => {
+      egyptianCast.forEach(m => m.classList.remove('selected'));
+      member.classList.add('selected');
+      selectedEgyptian = member;
+    });
   });
-});
 
-// Replace Movie Cast Member
-document.querySelectorAll('.cast-member').forEach(member => {
-  member.addEventListener('click', () => {
-    if (!selectedActor) {
-      alert("Select an Egyptian actor first!");
-      return;
-    }
+  // Replace Original actor with Egyptian
+  originalCast.forEach(member => {
+    member.addEventListener('click', () => {
+      if (!selectedEgyptian) return;
 
-    member.querySelector('img').src = selectedActor.img;
-    member.querySelector('p').textContent = selectedActor.name;
+      // Save history for undo
+      historyStack.push({
+        element: member,
+        prevName: member.querySelector('p').textContent,
+        prevImg: member.querySelector('img').src
+      });
 
-    document.querySelectorAll('.egyptian').forEach(a => a.classList.remove('selected'));
-    selectedActor = null;
+      // Replace content
+      member.querySelector('p').textContent = selectedEgyptian.dataset.name;
+      member.querySelector('img').src = selectedEgyptian.dataset.img;
+
+      selectedEgyptian.classList.remove('selected');
+      selectedEgyptian = null;
+    });
   });
-});
 
-// Reset All Casts
-document.getElementById('reset-btn').addEventListener('click', () => {
-  document.querySelectorAll('.cast-member').forEach(member => {
-    const originalImg = member.dataset.img;
-    const originalName = member.dataset.name;
-    member.querySelector('img').src = originalImg;
-    member.querySelector('p').textContent = originalName;
+  // Undo one step
+  undoBtn.addEventListener('click', () => {
+    if (historyStack.length === 0) return;
+    const last = historyStack.pop();
+    last.element.querySelector('p').textContent = last.prevName;
+    last.element.querySelector('img').src = last.prevImg;
+  });
+
+  // Reset all
+  resetBtn.addEventListener('click', () => {
+    location.reload();
   });
 });
