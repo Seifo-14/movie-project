@@ -95,6 +95,17 @@ h1 {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
+
+.series {
+  background: #fff;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  width: 85%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 .poster {
   width: 200px;
   border-radius: 10px;
